@@ -1,0 +1,31 @@
+# Jangan salin artefak lokal ke image — semuanya dibangun ulang saat build.
+.git
+.gitignore
+.github
+
+# Dependency & build artifacts (di-install/di-build ulang di dalam Dockerfile)
+vendor
+node_modules
+public/build
+public/hot
+public/storage
+
+# Secret & environment lokal (JANGAN sampai masuk image)
+.env
+.env.*
+auth.json
+
+# Cache & log lokal
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/*.key
+
+# Lain-lain
+.idea
+.vscode
+.fleet
+Thumbs.db
+.DS_Store
+tests
