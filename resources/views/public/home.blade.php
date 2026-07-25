@@ -73,7 +73,7 @@
                 </div>
 
                 {{-- Hero image — fixed static illustration, independent of the company profile upload --}}
-                <div class="relative hidden lg:block">
+                <div class="relative mt-12 lg:mt-0">
                     <img src="{{ asset('images/hero.png') }}" alt="Solusi transformasi digital {{ $siteSetting->company_name }}"
                          class="edge-fade animate-fade-up mx-auto w-full max-w-xl">
                 </div>
