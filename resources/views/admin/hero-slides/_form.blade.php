@@ -19,7 +19,7 @@
         <x-admin.toggle name="is_active" label="Active (visible on the site)" :checked="$slide->is_active ?? true" />
     </div>
 
-    <div class="sm:col-span-2">
+    {{-- <div class="sm:col-span-2">
         <x-admin.file name="image" label="Background image" :current="$slide->image" />
-    </div>
+    </div> --}}
 </div>
